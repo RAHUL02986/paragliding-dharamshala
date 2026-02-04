@@ -79,7 +79,7 @@ export default function ContactPage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             {/* Image */}
-            <div className="relative h-96 rounded-lg overflow-hidden shadow-lg lg:h-full lg:min-h-[600px]">
+            <div className="relative h-96 rounded-lg overflow-hidden shadow-lg lg:h-full ">
               <Image
                 src="/images/hero-paragliding.jpg"
                 alt="Beautiful Dharamshala landscape"
@@ -102,9 +102,9 @@ export default function ContactPage() {
 
       {/* Map Section */}
       <section className="w-full py-16 lg:py-24 bg-background">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className=" mx-auto px-4 ">
           <h2 className="text-3xl sm:text-4xl font-bold mb-12 text-center">Visit Us</h2>
-          <div className="relative h-96 rounded-lg overflow-hidden shadow-lg">
+          <div className="relative h-100 rounded-lg overflow-hidden shadow-lg">
             <iframe
               width="100%"
               height="100%"
