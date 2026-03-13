@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     canonical: process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}/` : '/',
   },
   verification: {
-    google: "duZX3pp8UV6a1XKushQWIwupz-mxUqZVB1NwI4ZZyn4",
+    google: "jG9FQYE_Wlg4A0Qf-qi87GE641r0f8whFSr5JZMUw9Y",
   },
   openGraph: {
     title: 'Dharamshala Paragliding Adventures',
