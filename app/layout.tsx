@@ -24,6 +24,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}/` : '/',
   },
+  verification: {
+    google: "duZX3pp8UV6a1XKushQWIwupz-mxUqZVB1NwI4ZZyn4",
+  },
   openGraph: {
     title: 'Dharamshala Paragliding Adventures',
     description: 'Experience the beauty of Dharamshala from the skies',
