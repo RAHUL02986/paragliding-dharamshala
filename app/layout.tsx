@@ -17,9 +17,13 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   title: 'Dharamshala Paragliding Adventures - Experience Mountain Flight',
-  description: 'Discover the thrill of paragliding over the stunning Himalayas in Dharamshala. Expert-led tandem flights, advanced courses, and scenic tours.',
-  keywords: 'paragliding, Dharamshala, adventure, Himalayas, tandem flight, extreme sports',
+  description: 'Best paragliding in Himachal Pradesh at Bir Billing & Dharamshala. Tandem flights ₹4999, courses ₹24999. Expert pilots, 100% safety over Dhauladhar Himalayas.',
+  keywords: 'paragliding Himachal Pradesh, Bir Billing paragliding, Dharamshala paragliding, tandem flight Bir Billing, paragliding Kangra, Himalayas adventure, Himachal paragliding courses',
   authors: [{ name: 'Dharamshala Paragliding Adventures' }],
+  robots: { index: true, follow: true },
+  alternates: {
+    canonical: process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}/` : '/',
+  },
   openGraph: {
     title: 'Dharamshala Paragliding Adventures',
     description: 'Experience the beauty of Dharamshala from the skies',
@@ -43,7 +47,7 @@ export const metadata: Metadata = {
     ],
     apple: '/apple-icon.png',
   },
-    generator: 'v0.app'
+  generator: 'Next.js',
 }
 
 export default function RootLayout({

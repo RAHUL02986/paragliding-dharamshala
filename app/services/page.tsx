@@ -1,3 +1,4 @@
+import { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
@@ -72,6 +73,17 @@ const services = [
   },
 ]
 
+export const metadata: Metadata = {
+  title: 'Paragliding Services Himachal Pradesh | Bir Billing Tandem ₹4999 Courses',
+  description: 'Best paragliding services Bir Billing Himachal Pradesh. Tandem flights ₹4999, group tours ₹4499, 5-day courses ₹24999, certification ₹49999. Kangra experts.',
+  keywords: 'Bir Billing tandem paragliding price, Himachal paragliding courses, Dharamshala paragliding packages, Kangra paragliding certification, HP paragliding rates',
+  openGraph: {
+    title: 'Paragliding Services Bir Billing HP',
+    description: 'Tandem flights ₹4999, courses ₹24999 from India\'s best site',
+    images: '/images/hero-paragliding.jpg',
+  },
+}
+
 export default function ServicesPage() {
   return (
     <main className="min-h-screen bg-background">
@@ -83,10 +95,10 @@ export default function ServicesPage() {
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">Our Services</h1>
             <p className="text-xl text-muted-foreground mb-8">
-              Choose the perfect paragliding experience tailored to your skill level and dreams
+              Premium paragliding packages from Bir Billing - Himachal Pradesh\'s paragliding capital
             </p>
             <p className="text-lg text-muted-foreground">
-              From your first flight to becoming a certified pilot, we have the perfect package for you
+              From tandem flights to professional certification - best prices guaranteed
             </p>
           </div>
         </div>
@@ -131,7 +143,7 @@ export default function ServicesPage() {
                         Ideal For: <span className="text-foreground">{service.ideal}</span>
                       </p>
                       <Button asChild className="w-full bg-primary hover:bg-primary/90">
-                        <Link href="/contact">Book This Service</Link>
+                        <Link href="/contact">Book {service.title}</Link>
                       </Button>
                     </div>
                   </CardContent>
@@ -145,23 +157,23 @@ export default function ServicesPage() {
       {/* Why Choose Us */}
       <section className="w-full py-16 lg:py-24 bg-card/50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold mb-12 text-center">Why Choose Our Services?</h2>
+          <h2 className="text-4xl font-bold mb-12 text-center">Why Bir Billing with Us?</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
                 icon: Award,
                 title: '15+ Years Experience',
-                description: 'Trusted by thousands of paragliding enthusiasts across the Himalayas',
+                description: 'Himachal Pradesh\'s most trusted paragliding operator from Bir Billing',
               },
               {
                 icon: CheckCircle,
                 title: '100% Safety Record',
-                description: 'Advanced equipment, certified pilots, and rigorous safety protocols',
+                description: 'Certified pilots, advanced equipment, Kangra valley safety protocols',
               },
               {
                 icon: Wind,
-                title: 'Scenic Locations',
-                description: 'Stunning views of Dharamshala and the beautiful Himalayan landscape',
+                title: 'World Class Location',
+                description: 'Bir Billing - Asia\'s best paragliding site with 40min+ XC flights',
               },
             ].map((feature, idx) => {
               const Icon = feature.icon
@@ -186,12 +198,12 @@ export default function ServicesPage() {
       {/* CTA Section */}
       <section className="w-full py-16 lg:py-20 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-6">Ready for an Adventure?</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold mb-6">Ready to Fly Bir Billing?</h2>
           <p className="text-lg mb-8 max-w-2xl mx-auto opacity-90">
-            Don't wait! Book your paragliding experience today and create memories that will last a lifetime.
+            Best prices guaranteed from Himachal Pradesh\'s paragliding capital. Book now!
           </p>
           <Button asChild size="lg" className="bg-primary-foreground text-primary hover:bg-primary-foreground/90">
-            <Link href="/contact">Book Your Flight Now</Link>
+            <Link href="/contact">Book Your Bir Billing Flight</Link>
           </Button>
         </div>
       </section>

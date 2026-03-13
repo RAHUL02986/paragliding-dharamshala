@@ -1,3 +1,4 @@
+import { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
@@ -62,6 +63,17 @@ const values = [
   },
 ]
 
+export const metadata: Metadata = {
+  title: 'About Bir Billing Paragliding | Best Himachal Pradesh Team 15+ Years',
+  description: "Himachal Pradesh's premier paragliding company in Bir Billing, Dharamshala. 15+ years, 5000+ flights, expert pilots from Kangra's top school. Safe tandem & courses.",
+  keywords: 'Bir Billing paragliding team, Dharamshala paragliding experts, Himachal Pradesh paragliding instructors, Kangra paragliding safety',
+  openGraph: {
+    title: 'About Us - Bir Billing Paragliding Experts',
+    description: 'Meet our 15+ year experienced team for safe paragliding in Himachal Pradesh',
+    images: '/images/gallery-4.jpg',
+  },
+}
+
 export default function AboutPage() {
   return (
     <main className="min-h-screen bg-background">
@@ -73,7 +85,7 @@ export default function AboutPage() {
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">About Us</h1>
             <p className="text-xl text-muted-foreground">
-              Discover the story behind Dharamshala's most trusted paragliding company
+              Himachal Pradesh's premier paragliding experts based in Bir Billing, Dharamshala
             </p>
           </div>
         </div>
@@ -86,7 +98,7 @@ export default function AboutPage() {
             <div className="relative h-96 rounded-lg overflow-hidden shadow-lg">
               <Image
                 src="/images/gallery-4.jpg"
-                alt="Our team training participants"
+                alt="Expert paragliding team training in Bir Billing, Himachal Pradesh"
                 fill
                 className="object-cover"
               />
@@ -95,13 +107,13 @@ export default function AboutPage() {
             <div>
               <h2 className="text-4xl font-bold mb-6">Our Story</h2>
               <p className="text-lg text-muted-foreground mb-6">
-                Dharamshala Paragliding Adventures was founded in 2009 by Raj Kumar, a passionate paraglider and aviation enthusiast who fell in love with the stunning Himalayan landscape. What started as a personal passion quickly turned into a mission to share the joy and freedom of flight with others.
+                Dharamshala Paragliding Adventures was founded in 2009 by Raj Kumar, a passionate paraglider who fell in love with Bir Billing - Asia\'s best paragliding site in Himachal Pradesh. What started as a personal passion quickly turned into Himachal\'s leading paragliding operation.
               </p>
               <p className="text-lg text-muted-foreground mb-6">
-                Over the past 15 years, we've grown into the most trusted paragliding destination in Dharamshala. We've trained hundreds of pilots, completed thousands of safe flights, and built a reputation for combining adventure with responsibility.
+                Over 15 years, we\'ve become Himachal Pradesh\'s most trusted paragliding destination in Kangra district. Trained hundreds of pilots from Bir Billing launch site, completed thousands of safe flights over Dhauladhar ranges.
               </p>
               <p className="text-lg text-muted-foreground">
-                Today, our team of certified instructors continues this legacy, bringing together expertise, passion, and an unwavering commitment to safety and excellence.
+                Our certified instructors continue this legacy with expertise, passion, and commitment to safety in Himachal Pradesh\'s premier paragliding destination.
               </p>
             </div>
           </div>
@@ -187,10 +199,10 @@ export default function AboutPage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold mb-6">Join Our Community</h2>
           <p className="text-lg mb-8 max-w-2xl mx-auto opacity-90">
-            Become part of thousands of happy paragliders who've experienced the magic of flying over the Himalayas.
+            Become part of thousands of happy paragliders who\'ve experienced Bir Billing - Himachal Pradesh\'s paragliding paradise.
           </p>
           <Button asChild size="lg" className="bg-primary-foreground text-primary hover:bg-primary-foreground/90">
-            <Link href="/contact">Start Your Adventure</Link>
+            <Link href="/contact">Start Your Bir Billing Adventure</Link>
           </Button>
         </div>
       </section>

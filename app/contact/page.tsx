@@ -1,3 +1,4 @@
+import { Metadata } from 'next'
 import Image from 'next/image'
 import Header from '@/components/header'
 import Footer from '@/components/footer'
@@ -9,28 +10,39 @@ const contactInfo = [
   {
     icon: MapPin,
     title: 'Location',
-    details: 'Dharamshala, Himachal Pradesh, India',
-    description: 'Nestled in the beautiful Himalayan foothills',
+    details: 'Bir Billing, Dharamshala, Kangra District, Himachal Pradesh 176077',
+    description: 'World famous Bir Billing paragliding launch site - Asia\'s best',
   },
   {
     icon: Phone,
-    title: 'Phone',
+    title: 'WhatsApp / Phone',
     details: '+91 98765 43210',
-    description: 'Available 24/7 for inquiries',
+    description: '24/7 booking & weather updates for Bir Billing flights',
   },
   {
     icon: Mail,
     title: 'Email',
-    details: 'info@paraglidedharmashala.com',
-    description: 'Response within 2 hours',
+    details: 'info@birbillingparagliding.com',
+    description: 'Quick response for Himachal paragliding bookings',
   },
   {
     icon: Clock,
-    title: 'Hours',
-    details: 'Daily 6:00 AM - 6:00 PM',
-    description: 'Open all days, including holidays',
+    title: 'Best Season',
+    details: 'Oct-May (Daily 6AM-6PM)',
+    description: 'Prime thermals Bir Billing. Monsoon flights on request',
   },
 ]
+
+export const metadata: Metadata = {
+  title: 'Contact Bir Billing Paragliding Himachal Pradesh | Book Tandem Flights',
+  description: 'Book paragliding Bir Billing HP. Dharamshala Kangra location +91 9876543210. World class tandem flights from Asia\'s best site. Quick response guaranteed.',
+  keywords: 'Bir Billing paragliding contact, Dharamshala paragliding booking, Himachal paragliding phone, Kangra paragliding address, book tandem Bir Billing',
+  openGraph: {
+    title: 'Contact - Bir Billing Paragliding Bookings',
+    description: 'Book your Himachal Pradesh paragliding adventure today',
+    images: '/images/hero-paragliding.jpg',
+  },
+}
 
 export default function ContactPage() {
   return (
@@ -41,9 +53,9 @@ export default function ContactPage() {
       <section className="w-full py-16 lg:py-24 bg-gradient-to-b from-primary/5 to-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">Get In Touch</h1>
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">Book Your Bir Billing Flight</h1>
             <p className="text-xl text-muted-foreground">
-              Have questions? We're here to help and answer any question you might have
+              Contact Himachal Pradesh\'s premier paragliding experts - quick response guaranteed
             </p>
           </div>
         </div>
@@ -82,7 +94,7 @@ export default function ContactPage() {
             <div className="relative h-96 rounded-lg overflow-hidden shadow-lg lg:h-full ">
               <Image
                 src="/images/hero-paragliding.jpg"
-                alt="Beautiful Dharamshala landscape"
+                alt="Bir Billing paragliding launch site Himachal Pradesh Dhauladhar views"
                 fill
                 className="object-cover"
               />
@@ -90,9 +102,9 @@ export default function ContactPage() {
 
             {/* Contact Form */}
             <div>
-              <h2 className="text-3xl sm:text-4xl font-bold mb-6">Send us a Message</h2>
+              <h2 className="text-3xl sm:text-4xl font-bold mb-6">Instant Booking Form</h2>
               <p className="text-lg text-muted-foreground mb-8">
-                Fill out the form below and we'll get back to you as soon as possible. Whether you have a question about our services, pricing, or anything else, we're here to help!
+                Complete the form for immediate confirmation. Tandem flights available daily from Bir Billing (weather permitting).
               </p>
               <Contact />
             </div>
@@ -103,20 +115,23 @@ export default function ContactPage() {
       {/* Map Section */}
       <section className="w-full py-16 lg:py-24 bg-background">
         <div className=" mx-auto px-4 ">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-12 text-center">Visit Us</h2>
-          <div className="relative h-100 rounded-lg overflow-hidden shadow-lg">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-12 text-center">Find Bir Billing Launch Site</h2>
+          <div className="relative h-96 md:h-[500px] rounded-lg overflow-hidden shadow-lg">
             <iframe
               width="100%"
               height="100%"
               frameBorder="0"
-              title="Dharamshala location"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3384.0346945891247!2d76.27906752346834!3d32.22375277080768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391b50ba0f7a7999%3A0x4d5f1f3e8c5d8d8d!2sDharamshala%2C%20Himachal%20Pradesh!5e0!3m2!1sen!2sin!4v1234567890123"
+              title="Bir Billing Paragliding Launch Site - World Paragliding Championships Venue"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6981.5!2d77.058!3d32.04!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a8f7e7e7e7e7e%3A0x4d5f1f3e8c5d8d8d!2sBir%20Billing%2C%20Himachal%20Pradesh%20176077!5e0!3m2!1sen!2sin!4v1700000000000"
               style={{ border: 0 }}
               allowFullScreen={true}
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             />
           </div>
+          <p className="text-center text-sm text-muted-foreground mt-4">
+            Located 35km from Dharamshala, 14km from Bir - Asia\'s #1 paragliding destination
+          </p>
         </div>
       </section>
 

@@ -1,3 +1,4 @@
+import { Metadata } from 'next'
 import Header from '@/components/header'
 import Hero from '@/components/hero'
 import Services from '@/components/services'
@@ -8,6 +9,17 @@ import Footer from '@/components/footer'
 import { Toaster } from 'sonner'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
+
+export const metadata: Metadata = {
+  title: 'Best Paragliding Himachal Pradesh | Bir Billing & Dharamshala Tandem Flights',
+  description: 'Top paragliding adventures in Himachal Pradesh. Tandem flights from Bir Billing, Dharamshala. ₹4999 scenic Himalayan rides, courses, 15+ years experts, 100% safe.',
+  keywords: 'paragliding Himachal Pradesh, Bir Billing paragliding, Dharamshala paragliding, tandem paragliding HP, paragliding Bir Billing price',
+  openGraph: {
+    title: 'Paragliding Himachal Pradesh - Bir Billing Adventures',
+    description: 'Experience world-famous Bir Billing paragliding in Himachal Pradesh',
+    images: '/images/hero-paragliding.jpg',
+  },
+}
 
 export default function Home() {
   return (

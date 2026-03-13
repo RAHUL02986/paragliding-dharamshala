@@ -72,7 +72,7 @@ export async function POST(request: NextRequest) {
       to: email,
       subject: 'We Received Your Inquiry - Paraglide Dharamshala',
       html: `
-        <div style="font-family: Arial, sans-serif; max-width: 600px;">
+        <div style="font-family: lato, sans-serif; max-width: 600px;">
           <h2 style="color: #0d5a3d;">Thank You for Contacting Us!</h2>
           
           <p>Hi ${escapeHtml(name)},</p>

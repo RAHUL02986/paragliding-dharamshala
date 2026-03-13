@@ -12,39 +12,39 @@ import { ChevronLeft, ChevronRight, X } from 'lucide-react'
 const galleryImages = [
   {
     src: '/images/gallery-1.jpg',
-    alt: 'Tandem paragliding flight over mountains',
+    alt: 'Tandem paragliding flight over Bir Billing Dhauladhar mountains Himachal Pradesh',
     category: 'Flights',
-    description: 'Experience the thrill of tandem flight with professional pilots',
+    description: 'Thrilling tandem paragliding from Bir Billing - world famous HP paragliding site',
   },
   {
     src: '/images/gallery-2.jpg',
-    alt: 'Equipment preparation at takeoff point',
+    alt: 'Paragliding gear preparation Bir Billing takeoff Kangra Himachal Pradesh',
     category: 'Training',
-    description: 'Proper equipment check before every flight',
+    description: 'Safety equipment check before Bir Billing launch - Himachal standards',
   },
   {
     src: '/images/gallery-3.jpg',
-    alt: 'Aerial view of Dharamshala landscape',
+    alt: 'Aerial panorama Bir Billing valley Dharamshala Himachal Pradesh paragliding',
     category: 'Scenery',
-    description: 'Stunning aerial perspective of the Himalayan landscape',
+    description: 'Spectacular Dhauladhar mountain views from Bir Billing flight path',
   },
   {
     src: '/images/gallery-4.jpg',
-    alt: 'Beginner tandem flight with instructor',
+    alt: 'Beginner tandem paragliding instructor Bir Billing Himachal Pradesh',
     category: 'Training',
-    description: 'First-time flyers experiencing the joy of paragliding',
+    description: 'First tandem flight experience - safe beginner introduction Bir Billing HP',
   },
   {
     src: '/images/gallery-5.jpg',
-    alt: 'Formation flight with multiple paragliders',
+    alt: 'Advanced formation paragliding Bir Billing Kangra Himachal Pradesh',
     category: 'Flights',
-    description: 'Advanced pilots flying in perfect formation',
+    description: 'Professional pilots formation flying above Bir Billing valley',
   },
   {
     src: '/images/gallery-6.jpg',
-    alt: 'Sunset paragliding over mountains',
+    alt: 'Golden hour sunset paragliding Bir Billing Himachal Pradesh',
     category: 'Scenery',
-    description: 'Golden hour flight experience with breathtaking views',
+    description: 'Magical sunset flight over Dhauladhar ranges from Bir Billing',
   },
 ]
 
@@ -81,9 +81,9 @@ export default function GalleryPage() {
       <section className="w-full py-16 lg:py-24 bg-gradient-to-b from-primary/5 to-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">Our Gallery</h1>
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">Bir Billing Gallery</h1>
             <p className="text-xl text-muted-foreground">
-              Explore the stunning moments from our paragliding adventures
+              Professional photography from Himachal Pradesh's premier paragliding destination
             </p>
           </div>
         </div>
@@ -177,12 +177,12 @@ export default function GalleryPage() {
       {/* CTA Section */}
       <section className="w-full py-16 lg:py-20 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-6">Want to Create Your Own Memories?</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold mb-6">Ready for Your Bir Billing Adventure?</h2>
           <p className="text-lg mb-8 max-w-2xl mx-auto opacity-90">
-            Join us for an unforgettable paragliding experience and become part of our gallery of happy adventurers.
+            Join thousands who've captured their Himachal Pradesh paragliding memories with us.
           </p>
           <Button asChild size="lg" className="bg-primary-foreground text-primary hover:bg-primary-foreground/90">
-            <Link href="/contact">Book Your Flight Today</Link>
+            <Link href="/contact">Book Flight - Be In Our Gallery</Link>
           </Button>
         </div>
       </section>
